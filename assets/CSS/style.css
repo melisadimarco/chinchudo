@@ -1,0 +1,754 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Roboto', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+html { font-size: 12px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+
+/*----------------------------------
+INICIO ESTRUCTURA
+-----------------------------------*/
+.containergrid {
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: auto 50px 400px 100px 300px 100px 900px auto;
+    grid-template-areas:"encabezado encabezado"
+                        "navegador navegador"
+                        "principal principal"
+                        "secundario secundario"
+                        "newsletter tarjeta"
+                        "h1 h1"
+                        "productos productos"
+                        "footer footer"
+}
+
+.encabezado {
+    grid-area: encabezado;
+}
+.navegador {
+    grid-area: navegador;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.secundario {
+    grid-area: secundario;
+}
+
+/*----------------------------------
+FIN ESTRUCTURA
+-----------------------------------*/
+
+.encabezado {
+    grid-area: encabezado;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+}
+
+.navegador {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #050505;
+    color: aliceblue;
+    font-weight: 600;
+    margin-top: 5px; 
+    width: auto;     
+    display: grid;
+    flex-wrap: wrap;
+}
+
+.navegador ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.navegador ul li {
+    padding-right: 25px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navegador ul li :hover { color:rgb(104, 12, 143)
+}
+
+.principal {
+    background-image: url(../img/portada.jpg);
+    height: 400PX;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    text-align: center;
+    justify-content: center;
+}
+
+.secundario {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    background-color: #d6d1d1;
+    width: auto;
+    height: 100px;
+}
+
+.caracteristica {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 20px;
+}  
+
+.caracteristica img {
+    max-height: 80px;
+}
+
+.secTitulo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    background-color: #d6d1d1;
+    width: auto;
+    height: 80px;
+}
+.secundarioTitulos {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetaContenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: rgb(37, 37, 37);
+    padding: 20px;
+}
+
+.tarjeta {
+    grid-area: tarjeta;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px; 
+    justify-content: space-around;
+    align-items: center;
+    animation-name: aparecer_der;
+    animation-duration: 1s;
+}
+
+.tarjetaTitulo {
+    font-size: 50px;
+    margin: 5px 0px;
+    text-align: center; 
+    padding-bottom: 10px;       
+}
+
+.tarjetaBajada {
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.email {
+    grid-area: tarjeta;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetaBtn {
+    background-color: darkseagreen;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    width: auto;  
+}
+
+.btn {
+    background-color: darkseagreen;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn :hover { color:rgb(104, 12, 143)
+}
+
+.newsletter {
+    grid-area: newsletter;
+    width: 500px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: aparecer_der;
+    animation-duration: 3s;  
+}
+
+
+.h1 {
+    grid-area: h1;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+.productos {
+    grid-area: productos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.variedades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    margin: 15px;
+    border: 1px solid #050505; 
+    border-radius: 10px; 
+}
+
+.variedades__img {
+    width: 70%;
+    margin: 30px;
+}
+
+.variedades__img:hover{
+    transform: scale(1.2);
+}
+
+.v1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.v2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.v3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.v4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.v5 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.v6 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-----------------------
+INICIO - NUESTROS TRABAJOS
+-------------------------*/
+
+.NT__grid {
+    background-color: rgb(37, 37, 37);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "trabajo1 trabajo2 trabajoDescripcion"
+                         "trabajo1 trabajo3 trabajoDescripcion";
+}
+
+.h2 {
+    grid-area: h2;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid #050505; 
+    border-radius: 10px; 
+    height: 100px; 
+}
+
+.domLogo {
+    height: 80px;
+    padding-left: 10px;
+}
+
+.nuestrosTrabajos {
+    grid-area: nuestrosTrabajos;
+    background-color: rgb(37, 37, 37);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.trabajo1 {
+    grid-area: trabajo1;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 900px;
+    padding: 15px;
+    justify-self: right;   
+}
+
+.canteroImg {
+    grid-area: canteroImg;
+    width: 100%;
+    justify-self: start;
+    animation-name: aparecer_der;
+    animation-duration: 3s;  
+}
+
+.trabajo2 {
+    grid-area: trabajo2;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    margin: 15px;
+    padding-top: 20px;
+    justify-self: left;
+}
+
+.canteroVideo {
+    grid-area: canteroVideo;
+    height: 100%;
+    animation-name: aparecer_der;
+    animation-duration: 3s;  
+}
+
+.trabajo3 {
+    grid-area: trabajo3;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    margin: 15px;
+    justify-self: left;    
+}
+
+.canteroVideo2 {
+    grid-area: canteroVideo2;
+    height: 100%;
+    animation-name: aparecer_der;
+    animation-duration: 3s;  
+}
+
+.trabajoDescripcion {
+    grid-area: trabajoDescripcion;
+    font-size: 20px;
+    font-weight: 100px;
+    color: white;
+    justify-self: left;
+    width: 800px;
+    height: 800px;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    animation-name: aparecer_der;
+    animation-duration: 3s; 
+}
+
+/*-----------------------
+FIN - NUESTROS TRABAJOS
+-------------------------*/
+
+
+/*-----------------------
+INICIO - CUIDADOS
+-------------------------*/
+.cuidados__general {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+
+}
+
+.cuidados__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    width: 500px;
+}
+.cuidados {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+    border: 1px solid white;
+    margin: 10px; 
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    animation-name: aparecer_der;
+    animation-duration: 3s; 
+}
+
+.cuidados__titulo {
+    font-size: 30px;
+    margin: 5px 0px            
+}
+
+.cuidados__bajada {
+    font-size: 20px;
+    margin: 20px;
+}
+
+/*-----------------------
+FIN - CUIDADOS
+-------------------------*/
+
+
+/*-----------------------
+INICIO - CONTACTO
+-------------------------*/
+.contacto {
+    grid-area: contacto;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.contacto__grid {
+    grid-area: contacto__grid;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "formulario mapa";
+}
+
+.fieldset {
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.completar {
+    grid-area: completar;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.legend {
+    grid-area: legend;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.datosPersonales {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: darkseagreen;
+    color: #050505;
+
+}
+
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.registro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pronombres {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: darkseagreen;
+    color: #050505;
+}
+
+.radio {
+    margin: 5px;
+}
+
+.box {
+    margin: 5px;
+    height: 30px;
+    text-align: center;
+}
+
+.boxDesplegable {
+    margin: 5px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.infoPronombres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.canal {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: darkseagreen;
+    color: #050505;
+}
+
+.canales {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cajaComentario {
+    padding: 10px;
+    text-align: center;
+}
+
+.comentario {
+    width: 525px;
+    height: 129px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.terminosyCondiciones {
+    grid-area: terminosyCondiciones;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.botones {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.sumbit {
+    background-color: darkseagreen;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    align-items: center;
+}
+
+.sumbit :hover { color:rgb(104, 12, 143)
+}
+
+.reset {
+    background-color: darkseagreen;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.reset :hover { color:rgb(104, 12, 143)
+}
+
+.cajaMapa {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa {
+    width: 700px;
+    height: 710px;
+
+}
+
+/*-----------------------
+FIN - CONTACTO
+-------------------------*/
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #224b25;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f1edde;
+    height: 8rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+    
+.footer img {
+grid-area: footer;
+height: 3rem;
+align-items: center;
+justify-content: space-between;
+}  
+
+/*-----------------------
+START- ANIMACIONES
+-------------------------*/
+@keyframes aparecer_izq{
+    0%{transform: translate(-50px,0px);
+       opacity: 0;}
+    100%{transform: translate(0px,0px);}
+}
+
+@keyframes aparecer_der{
+    0%{transform: translate(50px,0px);
+       opacity: 0;}
+    100%{transform: translate(0px,0px);}
+}
+
+
+/*-----------------------
+FIN- ANIMACIONES
+-------------------------*/

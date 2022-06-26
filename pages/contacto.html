@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../assets/CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body class="body">          
+        <header class="encabezado">
+            <img src="../assets/img/chinchudo3.jpg" alt="logo chinchudo">
+        </header>
+                
+        <nav class="navegador">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./nuestroTrabajo.html" target="_self">NUESTRO TRABAJO</a></li>
+                <li><a href="./cuidados.html" target="_self">CUIDADOS</a></li>
+                <li><a href="./contacto.html" target="_self">CONTACTO</a></li>
+                <li><a href="./tiendaOnline.html" target="_self">TIENDA ONLINE</a></li>
+            </ul>
+        </nav>
+
+        <aside class="secTitulo">
+            <div class="secundarioTitulos">CONTACTO</div>
+        </aside>
+
+        <div class="contacto">
+            <div class="contacto__grid">  
+                
+                    <div class="formulario">
+                        <form action="contactos.php" method="post">
+                            <fieldset class="fieldset">
+                                <legend class="legend">¿TENÉS CONSULTAS O PEDIDOS PARA HACERNOS?</legend>
+                                
+                                <div class="completar">
+                                    
+                                        <p class="datosPersonales">Dejanos tus datos personales</p>
+                                        <div class="datos">
+                                            <input type="text" class="box"name="nombre" placeholder="Nombre" required>
+                                            <input type="text" class="box" name="nombre" placeholder="Apellido" required>
+                                            <input type="number" class="box" name="celular" placeholder="Número de contacto"></div>
+                                        
+                                        <div class="registro">
+                                            <input type="email" class="box" name="email" placeholder="Email" required>
+                                            <input type="password" class="box" name="contraseña" placeholder="Contraseña">
+                                        </div>
+                                    
+                                                   
+                                        <p class="pronombres">Contanos qué pronombres utilizas</p>
+                                            <div class="infoPronombres"><label for="pMasc"><input type="radio" class="radio" name="pMasc" value="H"> Masculinos</label> 
+
+                                            <label for="pFem"><input type="radio" class="radio"name="pFem" value="M"> Femeninos</label>  
+
+                                            <label for="pNeu"><input type="radio" class="radio"name="pNeu" value="N"> Neutros</label></div>
+                                            
+                                        <p class="canal">¿Por dónde preferís que te respondamos?</p>
+                                            <div class="canales">
+                                                <select name="canal" class="boxDesplegable">
+                                                    <option value="WhatsApp">WhatsApp</option>
+                                                    <option value="Llamado">Llamado telefónico</option>
+                                                    <option value="Email">Email</option>
+                                                </select>
+                                                    </div>
+
+                                        <div class="cajaComentario"><textarea class="comentario" name="comentario" cols="30" rows="10">¿Cómo podemos ayudarte?</textarea>
+                                        </div>
+                            
+                                        <div class="terminosyCondiciones">
+                                            <input type="checkbox" name="acepto" value="si" required>  Acepto Términos y Condiciones
+                                        </div>
+                        
+                                        <div class="botones"><input type="submit" class="sumbit" value="Enviar">
+                                        <input type="reset" class="reset" value="Borrar"></div>
+                                    
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <fieldset class="fieldset">
+                        <legend class="legend">ENCONTRANOS EN VILLA BALLESTER</legend>
+                            <div class="cajaMapa">                       
+                                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26289.13360961821!2d-58.58031479417743!3d-34.549967450284086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9f880d30623%3A0xf63bd5e2b5393d70!2sVilla%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653944499313!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            </div>
+                    </fieldset>
+           
+            </div>
+                <footer class="footer">
+                    <div class="footer__texto">Villa Ballester</span> <br>Chinchudo ©2022 Todos los derechos reservados</div>
+                    <div class="footer__RRSS">
+                        <a href="https://www.instagram.com/chin.chudo/" target="_blank">
+                        <img classs src="../assets/img/instagram.svg" alt="instagram"></a>
+                    </div>
+                </footer>
+        </div> 
+    </body>
+</html> 
