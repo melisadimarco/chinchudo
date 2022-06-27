@@ -177,6 +177,8 @@ FIN ESTRUCTURA
     margin: 20px; 
     justify-content: space-around;
     align-items: center;
+    animation-name: aparecer_der;
+    animation-duration: 1s;
 }
 
 .tarjetaTitulo {
@@ -236,6 +238,8 @@ FIN ESTRUCTURA
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
+    animation-name: aparecer_der;
+    animation-duration: 3s;  
 }
 
 
@@ -270,6 +274,10 @@ FIN ESTRUCTURA
 .variedades__img {
     width: 70%;
     margin: 30px;
+}
+
+.variedades__img:hover{ 
+    transform: scale(1.2);
 }
 
 .v1 {
