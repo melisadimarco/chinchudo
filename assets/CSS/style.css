@@ -232,17 +232,19 @@ FIN ESTRUCTURA
 
 .newsletter {
     grid-area: newsletter;
-    width: 500px;
+    width: 400px;
     padding: 20px;
     align-items: center;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     animation-name: aparecer_der;
-    animation-duration: 3s;  
+    animation-duration: 2s;  
 }
 
-
+.mayus{
+    text-transform: uppercase;
+}
 .h1 {
     grid-area: h1;
     display: flex;
@@ -389,7 +391,7 @@ INICIO - NUESTROS TRABAJOS
     grid-area: canteroVideo;
     height: 100%;
     animation-name: aparecer_der;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .trabajo3 {
