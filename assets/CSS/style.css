@@ -294,8 +294,6 @@ FIN ESTRUCTURA
     justify-content: center;
 }
 
-
-
 .v4 {
     display: flex;
     flex-wrap: wrap;
@@ -316,7 +314,6 @@ FIN ESTRUCTURA
     align-items: center;
     justify-content: center;
 }
-
 
 /*-----------------------
 INICIO - NUESTROS TRABAJOS
@@ -373,6 +370,8 @@ INICIO - NUESTROS TRABAJOS
     grid-area: canteroImg;
     width: 100%;
     justify-self: start;
+    animation-name: aparecer_der;
+    animation-duration: 3s;  
 }
 
 .trabajo2 {
@@ -389,6 +388,8 @@ INICIO - NUESTROS TRABAJOS
 .canteroVideo {
     grid-area: canteroVideo;
     height: 100%;
+    animation-name: aparecer_der;
+    animation-duration: 3s;
 }
 
 .trabajo3 {
@@ -404,6 +405,8 @@ INICIO - NUESTROS TRABAJOS
 .canteroVideo2 {
     grid-area: canteroVideo2;
     height: 100%;
+    animation-name: aparecer_der;
+    animation-duration: 3s;  
 }
 
 .trabajoDescripcion {
@@ -417,6 +420,8 @@ INICIO - NUESTROS TRABAJOS
     display: grid;
     align-items: center;
     padding: 20px;
+    animation-name: aparecer_der;
+    animation-duration: 3s; 
 }
 
 /*-----------------------
