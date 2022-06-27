@@ -177,8 +177,6 @@ FIN ESTRUCTURA
     margin: 20px; 
     justify-content: space-around;
     align-items: center;
-    animation-name: aparecer_der;
-    animation-duration: 1s;
 }
 
 .tarjetaTitulo {
@@ -238,8 +236,6 @@ FIN ESTRUCTURA
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    animation-name: aparecer_der;
-    animation-duration: 3s;  
 }
 
 
@@ -274,10 +270,6 @@ FIN ESTRUCTURA
 .variedades__img {
     width: 70%;
     margin: 30px;
-}
-
-.variedades__img:hover{
-    transform: scale(1.2);
 }
 
 .v1 {
@@ -378,8 +370,6 @@ INICIO - NUESTROS TRABAJOS
     grid-area: canteroImg;
     width: 100%;
     justify-self: start;
-    animation-name: aparecer_der;
-    animation-duration: 3s;  
 }
 
 .trabajo2 {
@@ -396,8 +386,6 @@ INICIO - NUESTROS TRABAJOS
 .canteroVideo {
     grid-area: canteroVideo;
     height: 100%;
-    animation-name: aparecer_der;
-    animation-duration: 3s;  
 }
 
 .trabajo3 {
@@ -413,8 +401,6 @@ INICIO - NUESTROS TRABAJOS
 .canteroVideo2 {
     grid-area: canteroVideo2;
     height: 100%;
-    animation-name: aparecer_der;
-    animation-duration: 3s;  
 }
 
 .trabajoDescripcion {
@@ -428,8 +414,6 @@ INICIO - NUESTROS TRABAJOS
     display: grid;
     align-items: center;
     padding: 20px;
-    animation-name: aparecer_der;
-    animation-duration: 3s; 
 }
 
 /*-----------------------
@@ -469,8 +453,6 @@ INICIO - CUIDADOS
     border-radius: 10px;
     padding: 10px;
     justify-content: center;
-    animation-name: aparecer_der;
-    animation-duration: 3s; 
 }
 
 .cuidados__titulo {
@@ -732,23 +714,3 @@ height: 3rem;
 align-items: center;
 justify-content: space-between;
 }  
-
-/*-----------------------
-START- ANIMACIONES
--------------------------*/
-@keyframes aparecer_izq{
-    0%{transform: translate(-50px,0px);
-       opacity: 0;}
-    100%{transform: translate(0px,0px);}
-}
-
-@keyframes aparecer_der{
-    0%{transform: translate(50px,0px);
-       opacity: 0;}
-    100%{transform: translate(0px,0px);}
-}
-
-
-/*-----------------------
-FIN- ANIMACIONES
--------------------------*/
