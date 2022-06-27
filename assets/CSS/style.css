@@ -461,6 +461,8 @@ INICIO - CUIDADOS
     border-radius: 10px;
     padding: 10px;
     justify-content: center;
+    animation-name: aparecer_der;
+    animation-duration: 3s; 
 }
 
 .cuidados__titulo {
@@ -722,3 +724,23 @@ height: 3rem;
 align-items: center;
 justify-content: space-between;
 }  
+
+/*-----------------------
+START- ANIMACIONES
+-------------------------*/
+@keyframes aparecer_izq{
+    0%{transform: translate(-50px,0px);
+       opacity: 0;}
+    100%{transform: translate(0px,0px);}
+}
+
+@keyframes aparecer_der{
+    0%{transform: translate(50px,0px);
+       opacity: 0;}
+    100%{transform: translate(0px,0px);}
+}
+
+
+/*-----------------------
+FIN- ANIMACIONES
+-------------------------*/
