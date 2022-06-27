@@ -286,12 +286,7 @@ FIN ESTRUCTURA
     justify-content: center;
 }
 
-.v3 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .v4 {
     display: flex;
